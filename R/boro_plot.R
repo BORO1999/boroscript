@@ -18,5 +18,3 @@ boro_plot <- function(wynik=out)
     labs(color = "Pollutant") -> out
   return(out)
 }
-
-boro_plot(out)

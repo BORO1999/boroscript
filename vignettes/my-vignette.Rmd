@@ -15,25 +15,5 @@ knitr::opts_chunk$set(
 ```
 
 ```{r setup}
-library(pakietemisja)
-```
-
-**Marcin Borkiewicz**
-
-**e-mail:** *[jagomaol@poczta.fm](jagomaol@poczta.fm)*.
-
-***
-# Wprowadzenie
-***
-Dane, na których pracuje nasza funkcja pochodza ze strony Europejskiej Agencji Srodowiska (https://www.eea.europa.eu/themes/air/air-pollution-sources-1/emep-eea-air-pollutant-emission-inventory-guidebook}).
-
-***
-# Sposob instalacji
-***
-
-Pakiet mozna pobra z [github](https://github.com/), przez co konieczne jest zainstalowanie pakietu `devtools`, sluzacego do pobierania i instalacji znajdujacych sie na portalu repozytoriow. 
-
-```{r setup, eval=FALSE}
-install_git("https://github.com/BORO1999/boroscript")
 library(boroscript)
 ```
