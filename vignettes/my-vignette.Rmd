@@ -17,3 +17,23 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(boroscript)
 ```
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  echo = T,
+  message = F,
+  warning = F
+)
+```
+
+**Marcin Borkiewciz**
+
+**AGH** Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie, Wydział Geodezji Górniczej i Inżynierii Środowiska, Katedra Kształtowania i Ochrony Środowiska.
+
+**Kierunek** Geoinformacja
+
+**Przedmiot** Geoinformacja
+
+**e-mail:** *[majagool@poczta.fm](majagool@poczta.fm)*.

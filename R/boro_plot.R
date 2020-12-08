@@ -8,7 +8,7 @@
 #'
 #' @export
 
-boro_plot <- function(wynik=out)
+boro_plot <- function(wynik)
 {
 
   ggplot(data = wynik, aes(x =Nat , y = Emisja)) +
