@@ -48,21 +48,21 @@ Pakiet został stworzonyw ramach z przedmiotu “Metody Inwentaryzacji i Szacowa
 
 Pakiet mozna pobra z [github](https://github.com/), przez co konieczne jest zainstalowanie pakietu `devtools`, sluzacego do pobierania i instalacji znajdujacych sie na portalu repozytoriow. 
 
-Instalacja:
+# Instalacja:
 
-```{r echo=TRUE, message=FALSE, warning=FALSE}
+```{r ,eval=F}
 library(devtools)
 install_github("BORO1999/boroscript")
 ```
 
 Wczytanie
 
-```{r echo=TRUE, message=FALSE, warning=FALSE}
+```{r ,eval=F}
 library(boroscript)
 ```
 
 Informacje o pakiecie
-```{r echo=TRUE, message=FALSE, warning=FALSE}
+```{r ,eval=F}
 help(package="boroscript")
 ```
 
@@ -78,12 +78,15 @@ Dokumentacje do danych pakietu można wywołać w następujący sposób:
 
 
 
-Funkcje pakietu
+## Funkcje pakietu
 Funkcje pakietu posiadają dokumentację dostępną w systemie pomocy programu RStudio. W celu zapoznania się ze szczegółami zachęcam do jej przeglądnięcia po zainstalowania pakietu. Przykładowe wywołanie dokumentacji:
--fun_pack()
--emsija_plot()
 
-unkcja nazwa funkcji 1 służy do wyznaczania emisji zanieczyszczeń wytwarzanych przez pojazdy z silnikami spalinowymi. Emisje zanieczyszczeń zostały obliczone za pomocą następującego wzoru:
+```{r, eval=F}
+-fun_pack()
+-boro_plot()
+```
+
+Funkcja nazwa funkcji 1 służy do wyznaczania emisji zanieczyszczeń wytwarzanych przez pojazdy z silnikami spalinowymi. Emisje zanieczyszczeń zostały obliczone za pomocą następującego wzoru:
 
 Emisja=Nat * ((Alpha * Procent ^ 2 + Beta * Procent + Gamma + (Delta/Procent))(Epsilon * Procent ^ 2 + Zita * Procent + Hta) *(1-Reduction))
 
@@ -97,5 +100,5 @@ Funkcja nazwa funkcji 2 wyświetla wyniki funkcji nazwa funkcji 1. Rezultaty obl
 
 Funkcje można uruchomić w taki sposób:
 ```{r echo=TRUE, message=FALSE, warning=FALSE}
-emisja_plot(wynik)
+boro_plot(wynik)
 ```
