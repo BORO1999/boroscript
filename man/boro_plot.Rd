@@ -4,7 +4,7 @@
 \alias{boro_plot}
 \title{Funkcja wyswietla wykres na podstawie wyniku funkcji "fun_pack"}
 \usage{
-boro_plot(wynik = out)
+boro_plot(wynik)
 }
 \arguments{
 \item{wynik}{\itemize{
