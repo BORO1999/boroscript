@@ -38,4 +38,5 @@ pakietu:
 
 ``` r
 browseVignettes("boroscript")
+vignette("boroscript")
 ```
