@@ -29,7 +29,7 @@ library(boroscript)
 ```
 ***
 
-**Marcin Borkiewciz**
+**Marcin Borkiewicz**
 
 **AGH** Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie, Wydział Geodezji Górniczej i Inżynierii Środowiska, Katedra Kształtowania i Ochrony Środowiska.
 
