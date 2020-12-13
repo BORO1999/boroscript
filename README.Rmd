@@ -51,5 +51,6 @@ Podaje prosty i szybki dostep do winiety z informacjami na temat pakietu:
 
 ```{r, eval=FALSE}
 browseVignettes("boroscript")
+vignette("boroscript")
 ```
 
