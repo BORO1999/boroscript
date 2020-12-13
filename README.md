@@ -19,14 +19,19 @@ library(boroscript)
 
 ## Przyklad
 
-Podstawowe przyklady zastosowania funkcji:
+Podstawowy przyklad zastosowania funkcji:
 
 ``` r
-
-## basic example codde
-boroscript_calc()
-boroscript_draw()
+wynik<-fun_pack()
 ```
+
+Pakiet pozwala na obliczenie i rysowanie wykresu:
+
+``` r
+boro_plot(wynik)
+```
+
+<img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
 
 Podaje prosty i szybki dostep do winiety z informacjami na temat
 pakietu:

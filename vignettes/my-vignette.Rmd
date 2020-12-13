@@ -14,15 +14,20 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup}
+```{r, include = FALSE, eval=F}
 knitr::opts_chunk$set(
-	eval = FALSE,
-	message = FALSE,
-	warning = FALSE,
-	include = FALSE
+  comment = "#>", 
+  echo = T, 
+  message = F, 
+  warning = F
 )
 ```
 
+
+```{r setup1, include=FALSE, results='hide'}
+library(boroscript)
+```
+***
 
 **Marcin Borkiewciz**
 
@@ -34,7 +39,7 @@ knitr::opts_chunk$set(
 
 **e-mail:** *[majagool@poczta.fm](majagool@poczta.fm)*.
 
-
+***
 # Wprowadzenie
 ***
 Dane, na których pracuje nasza funkcja pochodza ze strony Europejskiej Agencji Srodowiska (https://www.eea.europa.eu/themes/air/air-pollution-sources-1/emep-eea-air-pollutant-emission-inventory-guidebook}).
@@ -48,22 +53,35 @@ Pakiet został stworzonyw ramach z przedmiotu “Metody Inwentaryzacji i Szacowa
 
 Pakiet mozna pobra z [github](https://github.com/), przez co konieczne jest zainstalowanie pakietu `devtools`, sluzacego do pobierania i instalacji znajdujacych sie na portalu repozytoriow. 
 
+***
 # Instalacja:
-
-```{r ,eval=F}
+***
+```{r echo=TRUE, message=FALSE, warning=FALSE}
 library(devtools)
 install_github("BORO1999/boroscript")
 ```
 
-Wczytanie
+```{r eval=FALSE, message=FALSE, warning=FALSE}
+if(!require(devtools)) {install.packages("devtools"); require(devtools)}
+install_github("BORO1999/boroscript", force=TRUE)
+```
+***
+Wczytanie:
 
-```{r ,eval=F}
+```{r echo=TRUE, message=FALSE, warning=FALSE}
 library(boroscript)
 ```
-
+***
 Informacje o pakiecie
-```{r ,eval=F}
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
 help(package="boroscript")
+```
+***
+Informacje
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+help(package = "boroscript")
 ```
 
 ***
@@ -81,9 +99,9 @@ Dokumentacje do danych pakietu można wywołać w następujący sposób:
 ## Funkcje pakietu
 Funkcje pakietu posiadają dokumentację dostępną w systemie pomocy programu RStudio. W celu zapoznania się ze szczegółami zachęcam do jej przeglądnięcia po zainstalowania pakietu. Przykładowe wywołanie dokumentacji:
 
-```{r, eval=F}
--fun_pack()
--boro_plot()
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+?fun_pack()
+?boro_plot()
 ```
 
 Funkcja nazwa funkcji 1 służy do wyznaczania emisji zanieczyszczeń wytwarzanych przez pojazdy z silnikami spalinowymi. Emisje zanieczyszczeń zostały obliczone za pomocą następującego wzoru:

@@ -12,6 +12,12 @@ knitr::opts_chunk$set(
 )
 ```
 
+
+```{r include=FALSE}
+library(boroscript)
+```
+
+
 # Cos na poczatek o boroscript
 
   
@@ -28,13 +34,17 @@ library(boroscript)
 ```
 ## Przyklad
 
-Podstawowe przyklady zastosowania funkcji:
+Podstawowy przyklad zastosowania funkcji:
   
-```{r example, eval = FALSE}
+```{r echo=T}
+wynik<-fun_pack()
+```
 
-## basic example codde
-boroscript_calc()
-boroscript_draw()
+Pakiet pozwala na obliczenie i rysowanie wykresu:
+
+```{r echo=T}
+boro_plot(wynik)
+
 ```
 
 Podaje prosty i szybki dostep do winiety z informacjami na temat pakietu:
